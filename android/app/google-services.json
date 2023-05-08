@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "83643204851",
+    "firebase_url": "https://resta-pucem-default-rtdb.firebaseio.com",
+    "project_id": "resta-pucem",
+    "storage_bucket": "resta-pucem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83643204851:android:5335aced7d7f2564d46386",
+        "android_client_info": {
+          "package_name": "com.example.resta_pucem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83643204851-u6pd7achcp1dd00e90i49r0ja4um8jjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpOFS3EAmBzXuUWhESQhtfdRZ4zAax6q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83643204851-7g0qk24vrmif1io3ahe6gpo0b0l5ols5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

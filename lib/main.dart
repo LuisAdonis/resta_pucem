@@ -1,6 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:resta_pucem/views/error_view.dart';
+import 'package:resta_pucem/views/home_view.dart';
+import 'package:resta_pucem/views/loanding_view.dart';
+import 'package:resta_pucem/views/page_view.dart';
+import 'firebase_options.dart';
 
-void main() => runApp(const MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const MyApp());
+}
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -8,15 +20,24 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      title: 'Navegacion',
+      onGenerateRoute: (settings) {
+        return MaterialPageRoute(
+          settings: settings,
+          builder: (context) {
+            switch (settings.name) {
+              case "/":
+                return LoandingView(title: settings.name);
+              case "/home":
+                return HomeView(title: settings.name);
+              case "/page1":
+                return const PagesView();
+              default:
+                return const ErrorView();
+            }
+          },
+        );
+      },
     );
   }
 }
