@@ -1,9 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:resta_pucem/views/error_view.dart';
-import 'package:resta_pucem/views/home_view.dart';
-import 'package:resta_pucem/views/loanding_view.dart';
-import 'package:resta_pucem/views/page_view.dart';
+import 'package:resta_pucem/router/confi_router.dart';
+import 'package:resta_pucem/utils/cons.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
@@ -19,25 +17,13 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Navegacion',
-      onGenerateRoute: (settings) {
-        return MaterialPageRoute(
-          settings: settings,
-          builder: (context) {
-            switch (settings.name) {
-              case "/":
-                return LoandingView(title: settings.name);
-              case "/home":
-                return HomeView(title: settings.name);
-              case "/page1":
-                return const PagesView();
-              default:
-                return const ErrorView();
-            }
-          },
-        );
-      },
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      title: "Resta PUCEM",
+      theme: ThemeData(
+        primarySwatch: createMaterialColor(principal),
+      ),
+      routerConfig: configRouter,
     );
   }
 }
