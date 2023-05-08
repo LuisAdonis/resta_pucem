@@ -1,0 +1,1 @@
+firebase appdistribution:distribute "build\app\outputs\apk\release\app-release.apk" --app 1:83643204851:android:5335aced7d7f2564d46386 --release-notes "Ref Data 81 Play Store 81" --testers "luispazmanta@gmail.com"
