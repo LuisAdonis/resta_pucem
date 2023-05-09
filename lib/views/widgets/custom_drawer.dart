@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:resta_pucem/views/acercade_view.dart';
 import 'package:resta_pucem/views/perfil_view.dart';
-import 'package:resta_pucem/views/principal_view.dart';
 import 'package:resta_pucem/views/terminosycondiciones_view.dart';
 import 'package:resta_pucem/views/widgets/custom_item_menu.dart';
 import 'package:resta_pucem/views/widgets/text_separator.dart';
