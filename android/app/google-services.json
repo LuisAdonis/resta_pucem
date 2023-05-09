@@ -30,6 +30,13 @@
             {
               "client_id": "83643204851-7g0qk24vrmif1io3ahe6gpo0b0l5ols5.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "83643204851-oei9t83rqdhh48itmthnn5pk63jh4dm7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.restaPucem"
+              }
             }
           ]
         }

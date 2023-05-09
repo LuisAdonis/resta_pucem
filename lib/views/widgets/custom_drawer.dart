@@ -32,16 +32,16 @@ class CustomDrawer extends StatelessWidget {
           Expanded(
             child: ListView(
               children: [
-                const TextSeparator(text: ' '),
+                // const TextSeparator(text: ' '),
                 CustomItemMenu(
                   icon: Icons.home,
                   text: "Inicio",
                   isActive: false,
                   onPressed: () {
-                    context.goNamed(PrincipalView.routeName);
+                    context.goNamed("/inicio");
                   },
                 ),
-                const TextSeparator(text: ' '),
+                // const TextSeparator(text: ' '),
                 CustomItemMenu(
                   icon: Icons.person_outline,
                   text: "Perfil",
@@ -50,7 +50,7 @@ class CustomDrawer extends StatelessWidget {
                     context.goNamed(PerfilView.routeName);
                   },
                 ),
-                const TextSeparator(text: ''),
+                // const TextSeparator(text: ''),
                 CustomItemMenu(
                   icon: Icons.help_center_outlined,
                   text: "Acerca de.",
